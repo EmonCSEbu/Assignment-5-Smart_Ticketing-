@@ -172,15 +172,395 @@
           </section>
 
         <!-- Offer Section end! -->
+        <!-- Seat Booking -->
+
+        <section id="emon" class="h-full bus-booking mt-10">
+            <div class="flex justify-center text-center bus-booking">
+              <div class="flex-col justify-center">
+                <p class="text-3xl m-3 font-bold">P.H Paribahan</p>
+                <p class="w-3/4 text-sm space-x-5 mx-auto text-light">
+                  Yes, you can run unit tests and view the results directly within
+                  the app. The integrated testing features allow for a streamlined .
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="mt-12">
+                <div class="w-3/4 mx-auto flex bg-white">
+                  <div class="left bg-white w-3/4 border">
+                    <div class="md:flex sm:flex-col justify-between p-10">
+                      <div class="flex">
+                        <div>
+                          <img class="h-[35px] mt-3" src="./images/bus-logo.png" />
+                        </div>
+                        <div class="ms-4">
+                          <span class="text-lg font-bold">
+                            Green Line Paribahan</span
+                          >
+                          <br />
+                          <small>Coach-009-WEB ! AC_Business</small>
+                        </div>
+                      </div>
+                      <div
+                        class=""
+                        style="background-color: #ddf8d9; border-radius: 5%"
+                      >
+                        <div class="flex mt-2 px-2">
+                          <div>
+                            <img class="h-[35px]" src="./images/seat-green.png" />
+                          </div>
+                          <div
+                            id="available-seat"
+                            class="green-text ms-2 grid items-center"
+                          >
+                            40 seats left
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Route Description -->
+                    <div class="mt-10 mx-16" style="background-color: #f8f8f8">
+                      <div class="flex justify-between p-5">
+                        <div>Route</div>
+                        <div>Dhaka - Sylhet</div>
+                      </div>
+                      <!-- dotted line -->
+                      <div class="dotted-line"></div>
+    
+                      <div class="flex justify-between p-5">
+                        <div>Departure Time</div>
+                        <div>9:00 PM</div>
+                      </div>
+                      <!-- dotted line -->
+                      <div class="dotted-line"></div>
+                      <div class="flex p-5 justify-around">
+                        <div class="p-2" style="background-color: #ebecee">
+                          Boarding Point - Laxmipur
+                        </div>
+                        <div class="p-2" style="background-color: #ebecee">
+                          Dropping Point - Bogura
+                        </div>
+                        <div class="p-2" style="background-color: #ebecee">
+                          Est. Time - 11 Hour
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <img src="./images/info-devider.png" />
+                  <div class="right w-1/5 flex justify-center items-center">
+                    <div class="w-full flex flex-col items-center">
+                      <div>
+                        <img
+                          style="height: 8vw"
+                          class=""
+                          src="./images/fare.png "
+                        />
+                      </div>
+    
+                      <div class="font-bold text-3xl">550 Taka</div>
+                      <div class="text-lg text-[#373a43]">per seat</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- BUS BOOKING SECTION -->
+            <div class="w-3/4 mx-auto flex bg-white mt-10">
+              <div class="flex w-full">
+                <!-- seat booking section -->
+                <div class="w-3/5 p-10">
+                  <div class="w-full text-xl font-bold p-5">Select Your Seat</div>
+                  <div class="seat-indicator justify-between w-full flex">
+                    <div class="available flex p-3">
+                      <img src="./images/seat-gray.png" />
+                      <span class="text-light ms-2 mt-1"> Available</span>
+                    </div>
+                    <div class="booked">
+                      <div class="flex p-3">
+                        <img src="./images/seat-green.png" />
+                        <span class="ms-2 green-text font-bold mt-1">
+                          Selected</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- bus driver seat -->
+                  <div class="flex justify-end">
+                    <div class="seat">
+                      <img src="./images/seat-gray.png" />
+                    </div>
+                  </div>
+                  <!-- seat numbers -->
+                  <div
+                    id="seat-design"
+                    class="grid grid-cols-5 gap-3 mt-5 justify-around"
+                  >
+                    <!-- <div
+                      style
+                      id="A"
+                      onClick="handleSeat('A1' )"
+                      class="bold flex justify-center items-center font-bold"
+                    >
+                      A
+                    </div>
+                    <button
+                      id="A1"
+                      onClick="handleSeat('A1')"
+                      class="seat grid-cols-1"
+                    >
+                      A1
+                    </button>
+                    <button
+                      id="A2"
+                      onClick="handleSeat('A2' )"
+                      class="seat grid-cols-1 me-4"
+                    >
+                      A2
+                    </button>
+                    <button
+                      id="A3"
+                      onClick="handleSeat('A3' )"
+                      class="seat grid-cols-1"
+                    >
+                      A3
+                    </button>
+                    <button
+                      id="A4"
+                      onClick="handleSeat('A4' )"
+                      class="seat grid-cols-1"
+                    >
+                      A4
+                    </button>
+                    <div
+                      style
+                      id="B"
+                      class="bold flex justify-center items-center font-bold"
+                    >
+                      B
+                    </div>
+                    <button
+                      id="B1"
+                      onClick="handleSeat('B1')"
+                      class="seat grid-cols-1"
+                    >
+                      B1
+                    </button>
+                    <button
+                      id="B2"
+                      onClick="handleSeat('B2' )"
+                      class="seat grid-cols-1 me-4"
+                    >
+                      B2
+                    </button>
+                    <button
+                      id="B3"
+                      onClick="handleSeat('B3' )"
+                      class="seat grid-cols-1"
+                    >
+                      B3
+                    </button>
+                    <button
+                      id="B4"
+                      onClick="handleSeat('B4' )"
+                      class="seat grid-cols-1"
+                    >
+                      B4
+                    </button> -->
+    
+                    <!-- B -->
+                  </div>
+                </div>
+                <!-- prices section -->
+                <div style="background-color: #ebecee" class="w-2/5">
+                  <div
+                    style="background-color: #ebecee"
+                    class="w-full text-xl font-bold p-5"
+                  >
+                    Select Your Seat
+                  </div>
+                  <div
+                    style="background-color: #ebecee"
+                    id="price-section"
+                    class="price-section"
+                  >
+                    <div class="flex justify-between p-3 w-full font-bold">
+                      <div>
+                        Seat
+                        <small
+                          style="background-color: white"
+                          class="text-sm green-text p-1 mx-2"
+                          id="count-seat"
+                        >
+                          0
+                        </small>
+                      </div>
+                      <div>Class</div>
+                      <div>Price</div>
+                    </div>
+                    <!-- <div
+                      id="A1"
+                      class="flex text-light border justify-between p-3 w-full"
+                    >
+                      <div>A1</div>
+                      <div>Economoy</div>
+                      <div>550</div>
+                    </div> -->
+                  </div>
+                  <!-- underline -->
+                  <div class="w-full border-b-2"></div>
+                  <!-- Total -->
+                  <div class="w-full flex justify-between p-3">
+                    <div class="font-bold">Total Price</div>
+                    <div>
+                      <span class="font-bold">BDT </span>
+                      <span class="font-bold" id="total-price"> 0 </span>
+                    </div>
+                  </div>
+                  <!-- Coupon -->
+                  <div class="w-full flex justify-around p-3">
+                    <input
+                      class="p-3"
+                      placeholder="Have any coupon?"
+                      type="text"
+                      id="coupon"
+                    />
+                    <button
+                      style="
+                        border-radius: 10px;
+                        background-color: #3cd722;
+                        color: white;
+                      "
+                      class="px-5"
+                      id="coupon-btn"
+                      disabled
+                      onclick="handleDiscount()"
+                    >
+                      Apply
+                    </button>
+                  </div>
+    
+                  <!-- Grand total -->
+                  <div class="w-full flex justify-between p-3">
+                    <div class="font-bold">Grand Total</div>
+                    <div>
+                      <span class="font-bold">BDT </span>
+                      <span class="font-bold" id="grand-price"> 0 </span>
+                    </div>
+                  </div>
+                  <!-- Passenger's info -->
+                  <div class="p-3">
+                    <div id="formId">
+                      <label class="font-bold"> Passenger Name:</label>
+                      <input
+                        type="text"
+                        placeholder="Type here"
+                        class="m-2 input input-bordered input-primary w-full max-w-xs"
+                      /><br />
+                      <label class="font-bold"> Phone*:</label><br />
+                      <input
+                        type="number"
+                        id="phone"
+                        placeholder="Type here"
+                        class="m-2 input input-bordered input-primary w-full max-w-xs"
+                        required
+                      /><br />
+                      <div
+                        style="color: red"
+                        id="phone-required"
+                        class="phone-required"
+                      ></div>
+                      <label class="font-bold"> Email:</label><br />
+                      <input
+                        type="email"
+                        placeholder="Type here"
+                        class="m-2 input input-bordered input-primary w-full max-w-xs"
+                      /><br />
+                      <div class="w-full flex justify-center mt-5">
+                        <button
+                          style="background-color: #3cd722; color: white"
+                          class="btn btn-outline btn-success px-10"
+                          value="Next"
+                          id="confirmation-btn"
+                          onclick="Confirmation()"
+                        >
+                          Next
+                        </button>
+                      </div>
+                    </div>
+                    <dialog id="my_modal_1" class="modal">
+                      <div class="modal-box text-center">
+                        <!-- <h3 class="font-bold text-lg">Hello!</h3> -->
+                        <img class="m-auto" src="./images/success.png" />
+                        <p class="py-4 font-bold">Success !</p>
+                        <div class="modal-action">
+                          <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn">Close</button>
+                          </form>
+                        </div>
+                      </div>
+                    </dialog>
+                  </div>
+                </div>
+    
+                <div></div>
+              </div>
+            </div>
+          </section>
+
+        <!-- Seating Booking End -->
 
 
 
     </main>
     <footer>
+        <footer class="footer p-10 bg-slate-900 text-slate-100 mt-12">
+            <nav>
+              <h1 class="footer-title font-extrabold">Services</h1> 
+              <a class="link link-hover">Branding</a>
+              <a class="link link-hover">All buses list</a>
+              <a class="link link-hover">Marketing</a>
+              <a class="link link-hover">Advertisement</a>
+            </nav> 
+            <nav>
+              <h6 class="footer-title">Company</h6> 
+              <a class="link link-hover">About us</a>
+              <a class="link link-hover">Contact</a>
+              <a class="link link-hover">Jobs</a>
+              <a class="link link-hover">Press kit</a>
+            </nav> 
+            <nav>
+              <h6 class="footer-title">Legal</h6> 
+              <a class="link link-hover">Terms of use</a>
+              <a class="link link-hover">Privacy policy</a>
+              <a class="link link-hover">Cookie policy</a>
+            </nav>
+          </footer> 
+          <footer class="footer px-10 py-4 border-t border-base-300 bg-slate-900 text-slate-100">
+            <aside class="items-center grid-flow-col">
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="fill-current"><path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path></svg>
+              <p><span class="font-extrabold">MEH-Ticket</span> <br>MEH-Ticket is a digital platform to make your <br>daily commuting better.</p>
+            </aside> 
+            <nav class="md:place-self-center md:justify-self-end">
+              <div class="grid grid-flow-row gap-4">
+                <div class="grid grid-flow-col gap-4">
+                    <p class=" font-extrabold spal ">Download our app</p>
+    
+                  </div>
+                  <div>
+                    <button
+                        class="btn spal btn-primary hover:none bg-white text-black border-none">
+                        <img src="/images/playstore.png" alt=""> Get it on <span class="font-extrabold">Google Play</span>
+                      </button>
+                  </div>
+              </div>
+            </nav>
+          </footer>
 
     </footer>
 
-    
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>

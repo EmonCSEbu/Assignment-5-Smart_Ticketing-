@@ -1,5 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700;800&display=swap'); */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-anton {
+  font-family: 'Anton', sans-serif;
+}
+
+.bus-booking {
+  background-color: #f8f8f8;
+}
+
+.green-text {
+  color: #3cd722;
+}
+
+.dotted-line {
+  border-bottom: 3px dotted #a09c9c;
+
+}
+
+.text-light {
+  color: #484c55;
+}
+
+.seat {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  background-color: #ebecee;
+  color: #484c55;
+  padding: 10px 35px;
+  border-radius: 10px;
+  cursor: pointer;
+}
 .spal{
     font-family: "Raleway", sans-serif;
 }
