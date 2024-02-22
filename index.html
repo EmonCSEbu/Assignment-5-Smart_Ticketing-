@@ -4,11 +4,183 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-5(Smart_Ticketing)</title>
+    <link rel="stylesheet" href="/styles/style.css">
     <!-- Daisy UI and Tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+     <!-- Font-Manrope -->
+      <!-- manrope google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom color in tailwind -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                "primary-color": "#1DD100",
+                "heading-color": "#131318",
+                "seat-clr": "#13131899",
+                "footer-color": "#FFFFFF99",
+              },
+            },
+          },
+        };
+      </script>
+          <style>
+            .font-style {
+              font-family: "Manrope", sans-serif;
+            }
+      </style>
 </head>
 <body>
+    <header class="container mx-auto">
+        <!-- Navbar start! -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                >
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Destination</a></li>
+                  <li><a>Search</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-4xl font-bold spal">MEH-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-2 text-[18px]">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn bg-[#1DD1001A] border-[#1DD10066] text-[#1DD100]">
+                Bus
+                <img src="images/bus-icon.png" alt="" srcset="" />
+              </a>
+            </div>
+          </div>
+
+          <!-- Navbar Done! -->
+
+          <!-- Banner start -->
+          <section class="h-[550px]">
+            <div
+              class="hero h-full bg-cover bg-no-repeat rounded-2xl"
+              style="background-image: url(images/banner.png)"
+            >
+              <div class="hero-overlay bg-opacity-20 rounded-2xl"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="lg:w-[742px]">
+                  <h1 class="mb-5 text-5xl font-bold spal">End-to-End Travel With</h1>
+                  <h1 class="mb-5 spal text-5xl font-bold text-primary-color">
+                    MEH Paribahan
+                  </h1>
+                  <p class="mb-5">
+                    Yes, you can run unit tests and view the results directly within
+                    the app. The integrated testing features allow for a streamlined
+                    .
+                  </p>
+                  <button  onclick="scrollToTicketSection()"
+                    class="btn spal btn-primary bg-primary-color text-black border-none">
+                    Buy Tickets
+                  </button>
+                </div>
+              </div>
+            </div>
+        </section>
+
+          <!-- Banner Done -->
+
+    </header>
+    <main class="container mx-auto">
+        <!-- Offer Section -->
+        <section class="mt-10">
+
+            <h1 class="text-4xl font-bold text-center spal">Best offers for you</h1>      
+            <div class="flex flex-col lg:flex-row  mt-8 gap-10">
+              <div class="w-full lg:w-1/2 h-[220px] flex ">
+                <div class="bg-[#FFBF0F] w-[55%] h-full rounded-l-2xl">
+                  <div class="flex flex-col items-center justify-center pt-[20%]">
+                    <h1 class="text-3xl font-extrabold">15% OFF</h1>
+                    <p class="text-xl font-semibold">on your next purchase</p>
+                    <p class="text-sm text-seat-clr">use by January 2024</p>
+                  </div>
+                </div>
+                <img src="images/cupon-devider.png" alt="" srcset="" class="bg-[#FFBF0F] w-[8%] h-full">
+                <div class="bg-[#FFBF0F] w-[37%] h-full rounded-r-2xl">
+                  <div class="flex flex-col items-center justify-center pt-[30%]">
+                    <h1 class="text-3xl font-extrabold spal">NEW15</h1>
+                    <p class="text-sm text-seat-clr">Coupon Code</p>
+    
+                  </div>
+                </div>
+      
+              </div>
+              <div class="w-full lg:w-1/2 h-[220px] flex">
+                <div class="bg-[#F78C9C] w-[55%]  h-full rounded-l-2xl">
+                  <div class="flex flex-col items-center justify-center pt-[20%]">
+                    <h1 class="text-3xl font-extrabold">20% OFF</h1>
+                    <p class="text-xl font-semibold">on your next purchase</p>
+                    <p class="text-sm text-seat-clr">use by January 2024</p>
+    
+                  </div>
+                </div>
+                <img src="images/cupon-devider.png" alt="" srcset="" class="bg-[#F78C9C] w-[8%] h-full">
+                <div class="bg-[#F78C9C] w-[37%] h-full rounded-r-2xl">
+                  <div class="flex flex-col items-center justify-center pt-[30%]">
+                    <h1 class="text-3xl font-extrabold spal">Couple 20</h1>
+                    
+                    <p class="text-sm text-seat-clr">Coupon Code</p>
+    
+                  </div>
+                </div>
+      
+              </div>
+    
+            </div>
+            <div class="flex justify-center mt-12">
+              <button class="border-[2px] border-primary-color p-3 text-primary-color rounded-xl font-bold spal" >See All Offers</button>
+            </div>
+            
+          </section>
+
+        <!-- Offer Section end! -->
+
+
+
+    </main>
+    <footer>
+
+    </footer>
+
     
 </body>
+
 </html>
